@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Terminal;
+    src: url(Assets/Fonts/terminal-grotesque.ttf);
+}
+
+h1 {
+    color: black;
+    opacity: 95;
+    font-family: Terminal;
+    font-size: 72px;
+    margin-top: 0.4 em;
+
+
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: black;
+    opacity: 85%;
+
+
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    color: black;
+    opacity: 95%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+
+.toc {
+    background-color: white;
+
+}
+
+.contentwrapper {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    column-gap: 1 em;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(Assets/background.jpg);
+
+    /* Full height */
+    height: 45%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

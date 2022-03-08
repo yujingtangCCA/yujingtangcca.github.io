@@ -9,7 +9,7 @@ var nodes = [
     name: 'Nicolas II',
     'age at death': 50,
     born: 1868,
-    "Location of Birth": 'Alexander Palace, Tsarskoye Selo, Russian Empire',
+    'Location of Birth': 'Alexander Palace, Tsarskoye Selo, Russian Empire',
     image: '../Images//Mikola_II_(cropped)-2.jpeg'
   },
   {
@@ -17,7 +17,8 @@ var nodes = [
     name: 'Alexandra Feodorovna',
     'age at death': 46,
     born: 1872,
-    "Location of Birth": 'New Palace, Darmstadt, Grand Duchy of Hesse, German Empire',
+    'Location of Birth':
+      'New Palace, Darmstadt, Grand Duchy of Hesse, German Empire',
     image: '../Images/Alexandra_Feodorovna.jpeg'
   },
   {
@@ -25,23 +26,23 @@ var nodes = [
     name: 'Tatiana',
     'age at death': 21,
     born: 1897,
-    "Location of Birth": 'Peterhof Palace, Saint Petersburg, Russian Empire',
-    image: 'bart.png'
+    'Location of Birth': 'Peterhof Palace, Saint Petersburg, Russian Empire',
+    image: 'holder.png'
   },
   {
     id: '1004',
     name: 'Maria',
     'age at death': 19,
     born: 1899,
-    "Location of Birth": 'Peterhof Palace, Saint Petersburg, Russian Empire',
-    image: 'lisa.png'
+    'Location of Birth': 'Peterhof Palace, Saint Petersburg, Russian Empire',
+    image: 'holder.png'
   },
   {
     id: '1005',
     name: 'Anastasia',
     'age at death': 16,
     born: 1901,
-    "Location of Birth": 'Peterhof Palace, Saint Petersburg, Russian Empire',
+    'Location of Birth': 'Peterhof Palace, Saint Petersburg, Russian Empire',
     image:
       '../Images/1200px-Grand_Duchess_Anastasia_Nikolaevna_Crisco_edit_letters_removed.jpeg'
   },
@@ -50,7 +51,7 @@ var nodes = [
     name: 'Alexei',
     'age at death': 13,
     born: 1904,
-    "Location of Birth": 'Peterhof Palace, Saint Petersburg, Russian Empire',
+    'Location of Birth': 'Peterhof Palace, Saint Petersburg, Russian Empire',
     image: '../Images/Alexei_Nikolaevich,_Tsarevich_of_Russia.jpeg'
   },
 
@@ -61,7 +62,8 @@ var nodes = [
     name: 'Olga',
     'age at death': 22,
     born: 1895,
-    "Location of Birth": 'Alexander Palace, Tsarskoye Selo, Saint Petersburg Governorate, Russian Empire',
+    'Location of Birth':
+      'Alexander Palace, Tsarskoye Selo, Saint Petersburg Governorate, Russian Empire',
     image: '../Images/1280px-Grand_Duchess_Olga_Nikolaevna_of_Russia.jpeg'
   },
   {
@@ -69,15 +71,15 @@ var nodes = [
     name: 'Alexander III',
     'age at death': 48,
     born: 1856,
-    "Location of Birth": 'Winter Palace, Saint Petersburg, Russian Empire',
-    image: 'mona.png'
+    'Location of Birth': 'Winter Palace, Saint Petersburg, Russian Empire',
+    image: 'holder.png'
   },
   {
     id: '1009',
     name: 'Alexander II',
     'age at death': 62,
     born: 1818,
-    "Location of Birth": 'The Moscow Kremlin, Moscow, Russia',
+    'Location of Birth': 'The Moscow Kremlin, Moscow, Russia',
     image: '../Images/Zar_Alexander_II_(cropped).jpeg'
   },
 
@@ -88,23 +90,24 @@ var nodes = [
     name: 'Maria Alexandrovna',
     'age at death': 55,
     born: 1841,
-    "Location of Birth": 'Darmstadt, Grand Duchy of Hesse, German Confederation',
-    image: 'dad.png'
+    'Location of Birth':
+      'Darmstadt, Grand Duchy of Hesse, German Confederation',
+    image: 'holder.png'
   },
   {
     id: '1011',
     name: 'Catherine Dolgorukova',
     'age at death': 74,
     born: 1847,
-    "Location of Birth": 'Volhynian Governorate, Russian Empire',
-    image: 'mum.png'
+    'Location of Birth': 'Volhynian Governorate, Russian Empire',
+    image: 'holder.png'
   },
   {
     id: '1012',
     name: 'Maria Feodorovna',
     'age at death': 80,
     born: 1847,
-    "Location of Birth": 'Yellow Palace, Copenhagen, Denmark',
+    'Location of Birth': 'Yellow Palace, Copenhagen, Denmark',
     image: '../Images/Maria_Feodorovna_of_Russia_1881.jpeg'
   }
 ]
@@ -318,7 +321,7 @@ function familyChart () {
         //different borders for family, male and female
         if (d.type == 'family') {
           return 'gold'
-        } 
+        }
       })
       .attr('stroke-width', '2px')
       .on('mouseover', function (d) {
@@ -334,7 +337,6 @@ function familyChart () {
             t_text += '<br>born: ' + d.born
           }
           if (d['Location of Birth'] !== undefined) {
-            
             t_text += '<br>Location of Birth: ' + d['Location of Birth']
           }
           tooltip.html(t_text)
